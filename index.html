@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Teste Prático 1</title>
+
+    <script src="somatorio.js"></script>
+
+    <style type="text/css">
+      body {
+        font-size: 40px;
+        font-family: "Times New Roman", Times, serif;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+      }
+      .div {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .btn {
+        background-color: #4c79f3; /* Green */
+        border: none;
+        border-radius: 5px;
+        color: black;
+        padding: 12px 20px;
+        margin-left: 20px;
+        text-align: center;
+        font-size: 18px;
+      }
+      .btn:hover {
+        background-color: #001a70;
+        color: white;
+        cursor: pointer;
+      }
+
+      .input {
+        width: 100px;
+        font-size: 24px;
+        padding: 6px 10px;
+        margin-left: 20px;
+        box-sizing: border-box;
+        border-radius: 5px;
+      }
+
+      .margin {
+        margin-top: 70px;
+      }
+
+      .result {
+        margin-left: 50px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="div">
+      <p>Insira um número inteiro positivo:</p>
+      <input class="input" type="text" id="numero" />
+      <button onclick="somatorio()" class="btn">Calcular</button>
+    </div>
+
+    <div class="margin">
+      <p style="margin-top: 100px">
+        Resultado: <span class="result" id="resultado"></span>
+      </p>
+    </div>
+  </body>
+</html>
